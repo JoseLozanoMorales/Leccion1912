@@ -14,7 +14,7 @@ public class Revista {
     public Revista(JSONObject a) throws JSONException {
         fecha =  "Año: "+a.getString("anio").toString() +" |"+" Mes: "+ a.getString("mes").toString();
         portada = "https://uteq.edu.ec/assets/images/newspapers/" + a.getString("urlportada").toString() ;
-        enlace = "https://www.uteq.edu.ec/revista-uteq/2025/" + a.getString("urlpw").toString() ;
+        enlace = a.getString("urlpw").toString() ;
     }
     public static ArrayList<Revista> JsonObjectsBuild(JSONArray datos) throws JSONException {
         ArrayList<Revista> revistas = new ArrayList<>();
