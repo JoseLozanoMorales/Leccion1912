@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements Asynchtask {
         });
 
         Map<String, String> datos = new HashMap<String, String>();
-        WebService ws= new WebService("https://apiws.uteq.edu.ec/h6RPoSoRaah0Y4Bah28eew/functions/information/entity/1",
+        WebService ws= new WebService("https://apiws.uteq.edu.ec/h6RPoSoRaah0Y4Bah28eew/functions/information/entity/5",
                 datos, MainActivity.this, MainActivity.this);
         ws.execute("GET", "Bearer ","eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJfeDF1c2VyZGV2IiwiaWF0IjoxNzY2MTU4Njg3LCJleHAiOjE3NjYyNDUwODd9.OYASL18UwM_XdRXG5MPktpuf58e2rGTz71QocOhHxBE");
 

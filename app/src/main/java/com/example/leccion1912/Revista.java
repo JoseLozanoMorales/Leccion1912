@@ -12,7 +12,7 @@ public class Revista {
     private String portada;
 
     public Revista(JSONObject a) throws JSONException {
-        fecha =  a.getString("anio").toString() + a.getString("mes").toString();
+        fecha =  "Año: "+a.getString("anio").toString() +" |"+" Mes: "+ a.getString("mes").toString();
         portada = "https://uteq.edu.ec/assets/images/newspapers/" + a.getString("urlportada").toString() ;
         enlace = "https://www.uteq.edu.ec/revista-uteq/2025/" + a.getString("urlpw").toString() ;
     }
