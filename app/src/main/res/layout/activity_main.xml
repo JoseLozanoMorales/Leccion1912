@@ -30,7 +30,7 @@
         app:srcCompat="@drawable/uteqnoticias" />
 
     <ListView
-        android:id="@+id/ListView"
+        android:id="@+id/lstNoticias"
         android:layout_width="0dp"
         android:layout_height="550dp"
         android:layout_marginTop="15dp"
